@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>ABR</groupId>
+    <artifactId>core</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <parent>
+        <artifactId>my-gdx-game-mvn</artifactId>
+        <groupId>ABR</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.badlogicgames.gdx</groupId>
+            <artifactId>gdx</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.badlogicgames.gdx</groupId>
+            <artifactId>gdx-box2d</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.badlogicgames.gdx</groupId>
+            <artifactId>gdx-controllers</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.badlogicgames.gdx</groupId>
+            <artifactId>gdx-freetype</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.badlogicgames.box2dlights</groupId>
+            <artifactId>box2dlights</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.underwaterapps.overlap2druntime</groupId>
+            <artifactId>overlap2d-runtime-libgdx</artifactId>
+            <version>0.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.kotcrab.vis</groupId>
+            <artifactId>vis-ui</artifactId>
+            <version>1.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>net.dermetfan.libgdx-utils</groupId>
+            <artifactId>libgdx-utils</artifactId>
+            <version>0.13.4</version>
+        </dependency>
+        <dependency>
+            <groupId>net.dermetfan.libgdx-utils</groupId>
+            <artifactId>libgdx-utils-box2d</artifactId>
+            <version>0.13.4</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+    <finalName>core</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
